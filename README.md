@@ -8,3 +8,7 @@ How to use this libery:
 3. to use a specific function here is how you call it (an example)-------->      pybrary.bubble(lst)
 
 in step three you are calling the function bubble from inside the pybrary libery and giving it the value lst (which in the tester program is a usless list of numbers)
+
+
+Notes to developers (Including myself):
+-when adding new functions you can utalize other functions inside your new one
