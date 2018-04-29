@@ -11,6 +11,20 @@ for i in range (0,len(lst)):
 print ("length of file")
 print (pybrary.fileLen("fileToRead.md"))
 
+lst = pybrary.shuffle(lst)
+for i in range (0,len(lst)):
+    print (lst[i])
+
+array = [7,6,4,3,1,24,3,2,876]
+"""print (pybrary.isAscending(array))
+array = pybrary.bubble(array)
+print (pybrary.isAscending(array))"""
+print (" ")
+print (" ")
+print (" ")
+array = pybrary.bogo(array)
+for i in range (0,len(array)):
+    print (array[i])
 """
 array = pybrary.readFile("fileToRead.md")
 #print (array)

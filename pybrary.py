@@ -11,6 +11,7 @@ Jokes will liely be made throughout the program in the form of comments
 functions will be grouped into catagories (ie sorts, writing / readings)
 
 """
+import random
 
 #-----------sorting algorithums
 
@@ -29,6 +30,56 @@ def bubble(array):#bubble sort
         print ("your list is bad. ¯\_(ツ)_/¯")
 
     return array
+
+
+
+def shuffle(array):#shuffles array 
+    random.shuffle(array)
+    return array
+
+def isDecending(array):
+    fact = True
+    for i in range (0, len(array)-1):
+        if (array[i] < array[i+1]):
+            fact = False
+            break
+    return fact
+
+def isAscending(array):
+    fact = True
+    for i in range (0, len(array)-1):
+        if (array[i] > array[i+1]):
+            fact = False
+            break
+    return fact
+
+def bogo(array):#just bogo sort
+    unsorted = True
+    while (unsorted == True):
+        if (isDecending(array) == True):
+            break
+        else:
+            array = shuffle(array)
+    return array
+
+def bogo_b_to_s(array):#bogo sort to make big to small
+    unsorted = True
+    while (unsorted == True):
+        if (isDecending(array) == True):
+            break
+        else:
+            array = shuffle(array)
+    return array
+
+def bogo_s_to_b(array):#bogo sort to make small to big
+    unsorted = True
+    while (unsorted == True):
+        if (isAscending(array) == True):
+            break
+        else:
+            array = shuffle(array)
+    return array
+
 
 #----------------file related functions
 
@@ -70,6 +121,8 @@ def appFile(fileName, var):#appends to file
         file.close()
     except:
         print ("something went wrong with function---> varToFile")
+
+
    
 def appArrayToFile(fileName, array):#takes a filename and an array and writes each element of the array to the file (it may create a
     file = open(fileName, "a")#opens file with append premission
