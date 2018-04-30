@@ -13,7 +13,7 @@ functions will be grouped into catagories (ie sorts, writing / readings)
 """
 import random
 
-#-----------sorting algorithums
+#-----------sorting algorithums (and sort/array related functions)
 
 
 def bubble(array):#bubble sort
@@ -28,10 +28,7 @@ def bubble(array):#bubble sort
                     array[k+1] = temp
     except ValueError:
         print ("your list is bad. ¯\_(ツ)_/¯")
-
     return array
-
-
 
 def shuffle(array):#shuffles array 
     random.shuffle(array)
@@ -53,7 +50,7 @@ def isAscending(array):
             break
     return fact
 
-def bogo(array):#just bogo sort
+def bogo(array):#just bogo sort (same as bogo_b_to_s)
     unsorted = True
     while (unsorted == True):
         if (isDecending(array) == True):
@@ -122,8 +119,6 @@ def appFile(fileName, var):#appends to file
     except:
         print ("something went wrong with function---> varToFile")
 
-
-   
 def appArrayToFile(fileName, array):#takes a filename and an array and writes each element of the array to the file (it may create a
     file = open(fileName, "a")#opens file with append premission
     for i in range (0, len(array)):
