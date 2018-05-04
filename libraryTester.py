@@ -16,6 +16,12 @@ for i in range (0,len(lst)):
     print (lst[i])
 
 array = [7,6,4,3,1,24,3,2,876]
+
+var = "the quick brown fox jumped over the lazy doge"
+
+var = pybrary.morse_from_eng(var)
+print (var)
+
 """print (pybrary.isAscending(array))
 array = pybrary.bubble(array)
 print (pybrary.isAscending(array))"""

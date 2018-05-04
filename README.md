@@ -12,3 +12,11 @@ in step three you are calling the function bubble from inside the pybrary libery
 
 Notes to developers (Including myself):
 -when adding new functions you can utalize other functions inside your new one
+
+
+included fuctions:
+
+bubble
+shuffle
+isDecending
+
