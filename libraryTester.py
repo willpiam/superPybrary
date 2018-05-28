@@ -1,13 +1,17 @@
 
 import pybrary
 
+import random
+lst = []
 
-lst = [1,3,2,73,76,23,98,12,5,6543,567,8765,34,24,876,763,5,5,12,0,0,12,76543]
+for i in range (0,1000):
+    lst.append(random.randint(0,100))
 
-lst = pybrary.bubble(lst)
+lst = pybrary.insertion(lst)
 for i in range (0,len(lst)):
     print (lst[i])
 
+print ("ig-------------------------------------------ig")
 print ("length of file")
 print (pybrary.fileLen("fileToRead.md"))
 

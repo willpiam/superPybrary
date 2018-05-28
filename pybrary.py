@@ -15,6 +15,19 @@ import random
 
 #-----------sorting algorithums (and sort/array related functions)
 
+def insertion(array):
+    try:
+        for i in range (1,len(array)):
+            hold = array[i]
+            j = i-1
+            while (j >=0) and (hold < array[j]):
+                array[j+1] = array[j]
+                j -= 1
+            array[j+1] = hold
+    except IndexError:
+        print ("SOMETHING WENT WRONG WHILE SORTING WITH INSERTION SORT")    
+    return array
+
 
 def bubble(array):#bubble sort
     try:#using try we can make sure the list is viable
