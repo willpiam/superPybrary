@@ -11,6 +11,10 @@ lst = pybrary.insertion(lst)
 for i in range (0,len(lst)):
     print (lst[i])
 
+lst = pybrary.insertion(lst, False)
+for i in range (0,len(lst)):
+    print (lst[i])
+
 print ("ig-------------------------------------------ig")
 print ("length of file")
 print (pybrary.fileLen("fileToRead.md"))
